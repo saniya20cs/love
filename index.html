@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love calculator</title>
     <style>
         body{
             margin: 0;
             padding: 0;
             font-family: 'Times New Roman', Times, serif;
-            height: 100px;
+            height: 100vh;
 
 
-            background: url('love calc.jpg')center/cover no-repeat;
+            background: url('love.webp')center/cover no-repeat;
             backdrop-filter: blur(6px);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: rgb(232, 235, 235);
-            text-shadow: 1px 1px 4px black;
+            color: rgb(81, 221, 221);
+            text-shadow: 1px 1px 4px rgb(0, 0, 0);
         }
         input{
             padding: 10px;
@@ -30,7 +29,7 @@
         }
         button{
             padding: 10px 20px;
-            background-color: pink;
+            background-color: rgb(214, 15, 95);
             width: 200px;
             border-radius: 5px;
             border: none;
@@ -45,9 +44,9 @@
     </style>
 </head>
 <body>
-    <h1>Love calculator</h1>
+    <h1>LOVE CALCULATOR</h1>
     <input id="name1" placeholder="Enter your name">
-    <input id="name1" placeholder="Enter your patner name">
+    <input id="name2" placeholder="Enter your patner name">
 
     <button onclick="calculatelove()">Calculate</button>
     <div  id="result"></div>
@@ -59,7 +58,7 @@
             if( n1=="" || n2=="")return ;
 
             let love = Math.floor(Math.random() *100) + 1;
-            document.getElementById("result").innerHTML=n1+"😊" + n2 +"=" + love+"% love";
+            document.getElementById("result").innerHTML=n1+"💕" + n2 +"=" + love+"% love";
         }
     </script>
     
